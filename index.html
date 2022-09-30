@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding:20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: rgb(89, 164, 234);
+        }
+        #violet{
+             background-color: blueviolet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .img{
+            height: 500px;
+            width: 1300px;
+            border-radius: 10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"> </span>
+        <span class="btn" id="aqua"onclick= "changeBG('rgb(89, 164, 234)')"> </span>
+        <span class="btn" id="violet" onclick= "changeBG('#ce9aff')"> </span>
+        <span class="btn" id="black" onclick= "changeBG ('#000000')"> </span>
+   </div>
+    <h1 class="text" > About Us</h1>
+    <img class="img" src="img.jpeg" alt="">
+    <p  class="text">
+        The primary purpose of your site's About Us page is to provide information about your business and what it can deliver, so it should include the basics, such as who your company serves, how long it's been around, and its long-term goals and mission. Don't forget to include your address.
+        I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide.
+        The About Us page of your website is an essential source of information for all who want to know more about your business. About Us pages are where you showcase your history, what is unique about your work, your company's values, and who you serve.
+        The design, written content, and visual or video elements together tell an important story about who you are and why you do it.
+
+       How can you make the most of this integral part of your marketing strategy?
+
+       In this article, you’ll learn what makes an exceptional About Us page and find 25 about us page examples of the best ones out there to inspire your own About Us page design and content.
+       You’ll find the About Page at the top of the menu under the Who section.
+
+       This page has a unique feel, thanks to the deconstructed action figures representing the founders, Leigh Whipday and Jonny Lander.
+
+     The great attention to detail and interactivity also reflect the company’s 16 years of experience.
+
+      To sum up, this page stands out by providing the perfect mix of fun and information.
+    </p>
+
+    <script>
+         function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == '#000000'){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+         }
+
+    </script>
+
+</body>
+</html>
